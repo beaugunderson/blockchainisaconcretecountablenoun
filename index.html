@@ -35,18 +35,43 @@
       }
 
       .blockchain {
-        background-color: pink;
+        background-color: lightgreen;
         padding-left: 0.1em;
         padding-right: 0.1em;
         margin-left: -0.1em;
         margin-right: -0.1em;
       }
 
+      .emphasize {
+        border-bottom: 3px solid green;
+      }
+
       .bad {
-        text-decoration: line-through;
+        color: red;
       }
     </style>
   </head>
+
+  <!--
+    Concrete, uncountable:
+
+    - equipment
+
+    Concrete, countable:
+
+    - cell phone
+    - blockchain
+
+    Abstract, uncountable:
+
+    - courage
+    - transportation
+
+    Abstract, countable:
+
+    - evil
+    - hope
+  -->
 
   <body class="d-flex flex-column h-100">
     <main role="main" class="flex-shrink-0">
@@ -55,16 +80,17 @@
           <span class="blockchain">Blockchain</span> is a concrete, countable noun.
         </h1>
 
-        <p class="lead">Testing, testing.</p>
-
         <h2 class="mt-5">Concrete?</h2>
 
         <p>A noun can be concrete or abstract. Concrete nouns represent things that can be interacted with individually.
 
         <ul>
-          <li>You can interact with <strong>a</strong> blockchain</li>
-          <li>You can interact with blockchain<strong>s</strong></li>
-          <li>You can not interact with blockchain</li>
+          <li>You can use software built on <span class="emphasize">a</span> blockchain</li>
+          <li class="bad">You can't use software built on blockchain</li>
+          <li>You can read about blockchain<span class="emphasize">s</span> in the news</li>
+          <li class="bad">You can't read about blockchain in the news</li>
+          <li>You can take a course about blockchain technology</li>
+          <li class="bad">You can't take a course about blockchain</li>
         </ul>
 
         <p>A comparable concrete noun is &ldquo;cell phone&rdquo;. Replace
@@ -77,8 +103,8 @@
         </ul>
 
         <ul>
-          <li class="bad">IBM is investing in blockchain</li>
-          <li class="bad">IBM is investing in cell phone</li>
+          <li class="bad">Wrong: IBM is investing in blockchain</li>
+          <li class="bad">Wrong: IBM is investing in cell phone</li>
         </ul>
 
         <ul>
@@ -87,8 +113,8 @@
         </ul>
 
         <ul>
-          <li class="bad">Blockchain is getting lots of news coverage now</li>
-          <li class="bad">Cell phone is getting lots of news coverage new</li>
+          <li class="bad">Wrong: Blockchain is getting lots of news coverage now</li>
+          <li class="bad">Wrong: Cell phone is getting lots of news coverage new</li>
         </ul>
 
         <h2 class="mt-5">Countable?</h2>
